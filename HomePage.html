@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap">
+    <title>Employee Payroll App</title>
+</head>
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="logo.png" alt="broken">
+            <div>
+                <span class="emp-text">EMPLOYEE</span><br>
+                <span class="emp-text emp-payroll">PAYROLL</span>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="header-contentemp">
+            <div class="emp-details-text">
+                Employee Details 
+            </div>
+            <a href="EmployeePayrollApp.html" class="add-button">
+                <img src="add-24px.svg" alt="">Add User</a>
+        </div>
+        <table id="display" class="table">
+            <tr>
+                <th>Profile</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Start Date</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td><img class="profile" src="Ellipse -2.png"></td>
+                <td>Mahesh</td>
+                <td>Male</td>
+                <td><div class="dept-label">HR</div>
+                <div class="dept-label">Engineer</div></td>
+                <td>400000</td>
+                <td>14 apr 2022</td>
+                <td>
+                    <img id="1" onclick="remove()" alt="delete" src="delete-black-18dp.svg">
+                    <img id="1" alt="edit" onclick="update()" src="create-black-18dp.svg">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="home.js"></script>
+    <script src="siteProperties.js"></script>
+    <script src="EmployeePayrollData.js"></script>
+    </header>
+</body>
+</html>
